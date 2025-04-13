@@ -1,16 +1,21 @@
 # To-do-Web-app
 
-A clean, responsive todo list application with simple task management functionality.
+A clean, responsive to-do list web application with simple task management functionality.
 
 ## Features
 
 - Add new tasks with a clean input field
 - View all tasks in a minimal list
+- A button to delete the task
+- Won't let you add an empty task
+- A search task to search task by their titles
+- Tasks are given by date and time of creation
 - Sort tasks alphabetically (A-Z or Z-A)
-- Simple purple-themed UI (as shown in screenshot)
+- Simple purple-themed UI (as shown in the screenshot)
 
 ## Screenshot
-![To-do-list-web-app](https://github.com/user-attachments/assets/beae1aec-b9cd-42be-b7d6-c3619fdb440b)
+![To-do-list-web-app](https://github.com/user-attachments/assets/a606ffc5-8092-4201-88a6-13f8ab5a421c)
+
 
 ## Technologies Used
 
