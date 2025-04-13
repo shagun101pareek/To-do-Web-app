@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #4a6fa5;
+    --secondary-color: #166088;
+    --accent-color: #4fc3f7;
+    --background-color: #f8f9fa;
+    --sidebar-color: #ffffff;
+    --text-color: #333333;
+    --text-light: #777777;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.2s ease;
+  }
