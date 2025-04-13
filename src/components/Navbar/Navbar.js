@@ -20,6 +20,7 @@ const Navbar = ({ onSearch }) => {
         </button>
         
         <div className="nav-links">
+        <a href="/about" className="nav-link">Dashboard</a>
           <a href="/about" className="nav-link">About Us</a>
           <a href="/contact" className="nav-link">Contact Us</a>
           <a href="/help" className="nav-link">Help</a>

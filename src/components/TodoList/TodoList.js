@@ -25,7 +25,7 @@ const TodoList = ({ todos, onDeleteTodo, onSortTodos }) => {
       
       {todos.length === 0 ? (
         <div className="empty-state">
-          <p>No tasks found. Add a new task to get started!</p>
+          <p>Add a new task to get started!</p>
         </div>
       ) : (
         <ul className="todo-list">

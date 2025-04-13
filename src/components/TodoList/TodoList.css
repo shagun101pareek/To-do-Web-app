@@ -10,11 +10,11 @@
 }
 
 .todo-list-header h2 {
-  color: var(--text-color);
+  color: rgb(101, 31, 182) ;
 }
 
 .sort-button {
-  background-color: var(--accent-color);
+  background-color: rgb(101, 31, 182);
   color: white;
   border: none;
   padding: 8px 15px;
@@ -25,7 +25,7 @@
 }
 
 .sort-button:hover {
-  background-color: var(--primary-color);
+  background-color: rgb(40, 96, 199);
 }
 
 .todo-list {

@@ -39,7 +39,7 @@ const TodoForm = ({ onAddTodo }) => {
         {error && <p className="error-message">{error}</p>}
       </div>
       <button type="submit" className="add-button">
-        Add Task
+        Go
       </button>
     </form>
   );
