@@ -14,7 +14,7 @@ const TodoList = ({ todos, onDeleteTodo, onSortTodos }) => {
   return (
     <div className="todo-list-container">
       <div className="todo-list-header">
-        <h2 className="todo-list-title">My Tasks</h2>
+        <h2>My Tasks</h2>
         <button 
           className="sort-button"
           onClick={handleSort}
@@ -25,7 +25,7 @@ const TodoList = ({ todos, onDeleteTodo, onSortTodos }) => {
       
       {todos.length === 0 ? (
         <div className="empty-state">
-          <p>Add a new task to get started!</p>
+          <p>No tasks found. Add a new task to get started!</p>
         </div>
       ) : (
         <ul className="todo-list">

@@ -1,7 +1,7 @@
 import { FiSearch, FiHome } from 'react-icons/fi'; // Removed FiUser since we're using an image
 import { useState } from 'react';
 import './Navbar.css';
-import profilePhoto from './profile.jpg'; 
+import profilePhoto from './profile.jpg'; // Import your profile image
 
 const Navbar = ({ onSearch }) => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -20,7 +20,6 @@ const Navbar = ({ onSearch }) => {
         </button>
         
         <div className="nav-links">
-        <a href="/about" className="nav-link">Dashboard</a>
           <a href="/about" className="nav-link">About Us</a>
           <a href="/contact" className="nav-link">Contact Us</a>
           <a href="/help" className="nav-link">Help</a>

@@ -10,7 +10,7 @@ const TodoForm = ({ onAddTodo }) => {
     e.preventDefault();
     
     if (!title.trim()) {
-      setError('Task title cannot be empty');
+      setError('Title cannot be empty');
       return;
     }
     
@@ -39,7 +39,7 @@ const TodoForm = ({ onAddTodo }) => {
         {error && <p className="error-message">{error}</p>}
       </div>
       <button type="submit" className="add-button">
-        Go
+        Add Task
       </button>
     </form>
   );

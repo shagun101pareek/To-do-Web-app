@@ -1,47 +1,47 @@
 .todo-form {
-    margin-bottom: 30px;
-  }
-  
-  .form-group {
-    margin-bottom: 10px;
-  }
-  
-  .todo-form input {
-    width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: var(--transition);
-  }
-  
-  .todo-form input:focus {
-    outline: none;
-    border-color: var(--accent-color);
-    box-shadow: 0 0 0 2px rgba(79, 195, 247, 0.2);
-  }
-  
-  .todo-form input.error {
-    border-color: #ff4444;
-  }
-  
-  .error-message {
-    color: #ff4444;
-    font-size: 0.8rem;
-    margin-top: 5px;
-  }
-  
-  .add-button {
-    background-color:rgb(101, 31, 182);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: var(--transition);
-  }
-  
-  .add-button:hover {
-    background-color:  rgb(44, 116, 209);
-  }
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.todo-form input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.todo-form input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(79, 195, 247, 0.2);
+}
+
+.todo-form input.error {
+  border-color: #ff4444;
+}
+
+.error-message {
+  color: #ff4444;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.add-button {
+  background-color:rgb(101, 31, 182);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.add-button:hover {
+  background-color: rgb(40, 96, 199);
+}

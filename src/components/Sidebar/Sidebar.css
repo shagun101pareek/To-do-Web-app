@@ -1,130 +1,78 @@
 .sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 60px;
-    background-color: #ffffff;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-    overflow: hidden;
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    border-right: 1px solid rgba(0, 0, 0, 0.05);
-  }
-  
-  .sidebar.expanded {
-    width: 220px;
-  }
-  
-  .sidebar-nav {
-    padding: 15px 0;
-    flex-grow: 1;
-    overflow-y: auto;
-    scrollbar-width: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-  }
-  
-  .sidebar-nav::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .sidebar-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center list items */
-    gap: 4px;
-  }
-  
-  .sidebar-nav li {
-    padding: 12px 0; /* Remove horizontal padding */
-    width: 100%;
-    max-width: 44px; /* Constrain width in collapsed state */
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: all 0.2s ease;
-    gap: 0; /* Remove gap in collapsed state */
-    border-radius: 8px;
-    margin: 0 auto; /* Center the li element */
-  }
-  
-  .sidebar.expanded li {
-    max-width: 100%; /* Full width when expanded */
-    padding: 12px 20px;
-    justify-content: flex-start; /* Align to start when expanded */
-    gap: 18px; /* Restore gap when expanded */
-  }
-  
-  .nav-icon {
-    font-size: 20px;
-    color: rgb(14, 13, 13);
-    width: 24px; /* Fixed width */
-    height: 24px; /* Fixed height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.2s ease;
-  }
-  
-  .sidebar-nav li:hover {
-    background-color: rgba(101, 31, 182, 0.08);
-    transform: translateX(2px);
-  }
-  
-  .sidebar-nav li:hover .nav-icon {
-    color: rgb(101, 31, 182);
-    transform: scale(1.1);
-  }
-  
-  .nav-text {
-    opacity: 0;
-    transition: 
-      opacity 0.3s ease, 
-      transform 0.3s ease,
-      color 0.2s ease;
-    color: #333333;
-    font-weight: 500;
-    font-size: 15px;
-    transform: translateX(-12px);
-    letter-spacing: 0.3px;
-  }
-  
-  .sidebar.expanded .nav-text {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  
-  .sidebar-nav li.active {
-    background-color: rgba(101, 31, 182, 0.1);
-    position: relative;
-  }
-  
-  .sidebar-nav li.active::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background-color: rgb(101, 31, 182);
-    border-radius: 0 3px 3px 0;
-  }
-  
-  .sidebar-nav li.active .nav-icon {
-    color: rgb(101, 31, 182);
-  }
-  
-  .sidebar-nav li.active .nav-text {
-    color: rgb(101, 31, 182);
-    font-weight: 600;
-  }
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  background-color: #ffffff;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  overflow: hidden;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.expanded {
+  width: 200px;
+}
+
+.sidebar-nav {
+  padding: 10px 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  padding: 10px 15px; /* Slightly reduced vertical padding */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  gap: 16px; /* Added gap between icon and text */
+}
+
+.sidebar-nav li:hover {
+  background-color: rgba(101, 31, 182, 0.08);
+}
+
+.nav-icon { /* Fixed typo from .navi-icon */
+  font-size: 20px; /* Slightly smaller */
+  color: rgb(14, 13, 13);
+  min-width: 24px; /* Ensures consistent icon width */
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-nav li:hover .nav-icon {
+  color: rgb(101, 31, 182);
+}
+
+.nav-text {
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  color: #333333;
+  font-weight: 500; /* Medium weight for better readability */
+  font-size: 14px;
+  transform: translateX(-10px); /* Smooth entrance animation */
+}
+
+.sidebar.expanded .nav-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sidebar-nav li.active {
+  background-color: rgba(101, 31, 182, 0.1);
+}
+
+.sidebar-nav li.active .nav-icon {
+  color: rgb(101, 31, 182);
+}

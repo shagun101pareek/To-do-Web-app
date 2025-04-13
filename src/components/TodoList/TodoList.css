@@ -1,92 +1,42 @@
 .todo-list-container {
-    margin-top: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px;
-  }
-  
-  .todo-list-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  
-  .todo-list-header h2 {
-    color: rgb(101, 31, 182);
-    margin: 0;
-    font-size: 1.5rem;
-  }
-  
-  .sort-button {
-    background-color: rgb(101, 31, 182);
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    transition: all 0.2s ease;
-    white-space: nowrap;
-  }
-  
-  .sort-button:hover {
-    background-color: rgb(81, 11, 162);
-    transform: translateY(-1px);
-  }
-  
-  .todo-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .empty-state {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    color: var(--text-light);
-    grid-column: 1 / -1;
-    margin-top: 20px;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .todo-list-container {
-      padding: 0 15px;
-    }
-    
-    .todo-list-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-    }
-    
-    .todo-list {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .todo-list-container {
-      padding: 0 10px;
-    }
-    
-    .sort-button {
-      width: 100%;
-      padding: 10px;
-    }
-    
-    .empty-state {
-      padding: 30px 15px;
-    }
-  }
+  margin-top: 20px;
+}
+
+.todo-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-list-header h2 {
+  color: var(--text-color);
+}
+
+.sort-button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: var(--transition);
+}
+
+.sort-button:hover {
+  background-color: var(--primary-color);
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: var(--text-light);
+}

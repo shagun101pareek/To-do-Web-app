@@ -1,25 +1,13 @@
-/* Base Variables */
-:root {
-  --primary-color: rgb(101, 31, 182);
-  --primary-dark: rgb(81, 11, 162);
-  --text-color: #333;
-  --text-light: #666;
-  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  --transition: all 0.3s ease;
-}
-
-/* Layout Structure */
-.app-container {
+.app {
   display: flex;
   min-height: 100vh;
-  position: relative;
 }
 
 .main-content {
   flex: 1;
-  padding: 30px;
   margin-left: 60px;
-  margin-top: 70px; /* Matches navbar height */
+  margin-top: 60px;
+  padding: 30px;
   transition: var(--transition);
 }
 
@@ -27,115 +15,18 @@
   margin-left: 200px;
 }
 
-/* Container Styles */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Typography */
-h1, h2, h3 {
-  color: var(--primary-color);
-  margin-bottom: 1.5rem;
-}
-
-/* Todo App Specific */
-.todo-app {
-  width: 100%;
   max-width: 800px;
   margin: 0 auto;
 }
 
-.add-task-input {
-  width: 100%;
-  padding: 12px 20px;
-  margin-bottom: 1.5rem;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  font-size: 1rem;
-  transition: var(--transition);
-}
-
-.add-task-input:focus {
-  outline: none;
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(101, 31, 182, 0.1);
-}
-
-.tasks-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.empty-state {
-  color: var(--text-light);
-  text-align: center;
-  padding: 2rem;
-  background: white;
-  border-radius: 8px;
-  box-shadow: var(--shadow);
-  margin-top: 1rem;
-}
-
-/* Mobile Menu Button */
-.mobile-menu-button {
-  display: none;
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  z-index: 101;
-  background: white;
-  border: none;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: var(--shadow);
-  cursor: pointer;
-}
-
-/* Responsive Breakpoints */
-@media (max-width: 992px) {
-  .main-content {
-    padding: 25px;
-  }
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
   .main-content {
-    margin-left: 0 !important;
     padding: 20px;
-    padding-top: 80px;
-  }
-
-  .mobile-menu-button {
-    display: block;
-  }
-
-  .todo-app {
-    padding: 0;
-  }
-
-  .add-task-input {
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .main-content {
-    padding: 15px;
-    padding-top: 70px;
-  }
-
-  .tasks-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .add-task-input {
-    padding: 0.8rem;
   }
 }
